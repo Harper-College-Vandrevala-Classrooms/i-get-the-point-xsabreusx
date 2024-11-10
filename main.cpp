@@ -61,10 +61,11 @@ int main() {
     bool c3 = p1 != p2;
     Point c4 = p1/p2;
 
-    cout << "\n Overload test for - operator Output should be " << sqrt(2) << ", output: " << c1;
-    cout << "\n Overload test for == operator Output should be " << false << ", output: " << c2;
-    cout << "\n Overload test for != operator Output should be " << true << ", output: " << c3;
-    cout << "\n Overload test for / operator Output should be " << "(1.5, 1.5), output: (" << c4.getx() << ", " << c4.gety() << ")";
+    cout << "\nOverload test for - operator Output should be " << sqrt(2) << ", output: " << c1;
+    cout << "\nOverload test for == operator Output should be " << false << ", output: " << c2;
+    cout << "\nOverload test for != operator Output should be " << true << ", output: " << c3;
+    cout << "\nOverload test for / operator Output should be " << "(1.5, 1.5), output: (" << c4.getx() << ", " << c4.gety() << ")";
+    cout << "\n     If values match, all tests pass.";
 
     ///////////////////////////////////////////////
 
