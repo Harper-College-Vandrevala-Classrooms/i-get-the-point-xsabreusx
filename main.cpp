@@ -10,12 +10,14 @@ using namespace std;
 
 class PointProcessor {
 public:
-    void addPoint(double x, double y) {
+    void addPoint(double x, double y) 
+    {
         points.push_back({x, y});
     }
 
     double calculateDistance(int index1, int index2) const {
-        if (index1 < 0 || index1 >= points.size() || index2 < 0 || index2 >= points.size()) {
+        if (index1 < 0 || index1 >= points.size() || index2 < 0 || index2 >= points.size()) 
+        {
             cerr << "Invalid point index." << endl;
             return -1;
         }
@@ -29,7 +31,8 @@ public:
 
     void printPoints() const {
         cout << "Stored Points:" << endl;
-        for (int i = 0; i < points.size(); ++i) {
+        for (int i = 0; i < points.size(); ++i) 
+        {
             cout << "Point " << i + 1 << ": (" << points[i].first << ", " << points[i].second << ")" << endl;
         }
     }
@@ -48,6 +51,7 @@ int main() {
     processor.printPoints();
 
     double distance = processor.calculateDistance(0, 1);
+
     if (distance != -1) {
         cout << "Distance between Point 1 and Point 2: " << distance << endl;
     }
